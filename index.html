@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CodePixel Co., Ltd. | Software House & System Architect</title>
+
+<meta name="description" content="CodePixel Software House รับทำเว็บไซต์ ระบบหลังบ้าน และ Web Application ระดับสูง พร้อมสัญญาจ้างมาตรฐาน">
+<meta name="keywords" content="รับทำเว็บ, software house, admin system, พัฒนาระบบ, สัญญาจ้างทำเว็บ, CodePixel">
+<meta name="author" content="CodePixel">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+
+<style>
+    :root {
+        --primary: #4cc3ff;
+        --secondary: #6c63ff;
+        --bg: #05070a;
+    }
+    body {
+        font-family: 'Inter', sans-serif;
+        background: var(--bg);
+        color: #e5e7eb;
+        scroll-behavior: smooth;
+    }
+    .glass {
+        background: rgba(255, 255, 255, 0.03);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .glass:hover {
+        background: rgba(255, 255, 255, 0.06);
+        border-color: var(--primary);
+        transform: translateY(-5px);
+    }
+    .btn-gradient {
+        background: linear-gradient(90deg, var(--primary), var(--secondary));
+        transition: 0.3s;
+    }
+    .btn-gradient:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 20px rgba(76, 195, 255, 0.3);
+    }
+    .text-gradient {
+        background: linear-gradient(90deg, var(--primary), var(--secondary));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .grid-bg {
+        background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+        background-size: 40px 40px;
+    }
+    .card-glow-blue { box-shadow: 0 0 20px rgba(76, 195, 255, 0.1); }
+    .card-glow-purple { box-shadow: 0 0 20px rgba(108, 99, 255, 0.1); }
+    .card-glow-emerald { box-shadow: 0 0 20px rgba(16, 185, 129, 0.1); }
+</style>
+<meta name="google-site-verification" content="nDZKhjBejnYHWvKro7kB_NGEdsidOeQt5H6zaOpOguw" />
+</head>
+
+<body class="grid-bg">
+
+<nav class="fixed w-full z-50 bg-black/70 backdrop-blur-md border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <div class="flex items-center gap-2">
+            <div class="w-8 h-8 btn-gradient rounded flex items-center justify-center font-black text-black text-xs shadow-lg">CP</div>
+            <b class="text-xl tracking-tighter uppercase">Code<span class="text-[#4cc3ff]">Pixel</span></b>
+        </div>
+        <div class="hidden md:flex space-x-8 text-gray-400 text-sm font-medium">
+            <a href="#home" class="hover:text-white transition">Home</a>
+            <a href="#services" class="hover:text-white transition">Services</a>
+            <a href="#portfolio" class="hover:text-white transition">Portfolio</a>
+            <a href="#contact" class="hover:text-white transition">Contact</a>
+        </div>
+        <a href="#contact" class="hidden md:block btn-gradient px-5 py-2 rounded-full text-black text-xs font-bold shadow-lg">Get a Quote</a>
+    </div>
+</nav>
+
+<section id="home" class="min-h-screen flex items-center justify-center text-center px-6 pt-20">
+    <div class="max-w-4xl">
+        <div class="inline-block px-4 py-1 glass rounded-full text-[10px] font-bold tracking-widest text-[#4cc3ff] mb-6 uppercase">
+            // Digital System Architect & Software House
+        </div>
+        <h1 class="text-6xl md:text-8xl font-black mb-6 tracking-tighter leading-none">
+            Code the <span class="text-gradient">Future</span><br>
+            Pixel by <span class="text-gradient">Pixel</span>
+        </h1>
+        <p class="text-gray-400 max-w-2xl mx-auto text-lg md:text-xl mb-10">
+            เปลี่ยนไอเดียทางธุรกิจให้เป็นระบบที่ใช้งานได้จริง 
+            เราสร้างสรรค์ซอฟต์แวร์ระดับ Enterprise ด้วยความละเอียดและเทคโนโลยีล่าสุด
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+            <a href="#contact" class="btn-gradient px-10 py-4 rounded-2xl text-black font-bold text-lg shadow-xl">เริ่มโปรเจกต์กับเรา</a>
+            <a href="#portfolio" class="glass px-10 py-4 rounded-2xl font-bold text-lg">ดูผลงานของเรา</a>
+        </div>
+    </div>
+</section>
+
+<section class="py-12 glass border-y border-white/5">
+    <div class="max-w-7xl mx-auto px-6 overflow-hidden">
+        <p class="text-center text-gray-500 text-[10px] font-bold tracking-[0.3em] uppercase mb-10">Powered by Modern Technology</p>
+        <div class="flex flex-wrap justify-center gap-10 md:gap-20 opacity-40 grayscale hover:grayscale-0 transition-all duration-500">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" class="h-10" title="Next.js">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" class="h-10" title="TypeScript">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" class="h-10" title="Node.js">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" class="h-10" title="PostgreSQL">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" class="h-10" title="Tailwind CSS">
+        </div>
+    </div>
+</section>
+
+<section id="services" class="py-32 px-6 max-w-7xl mx-auto">
+    <div class="text-center mb-20">
+        <h2 class="text-4xl md:text-5xl font-black mb-4">Our Expertise</h2>
+        <p class="text-gray-500">โซลูชันที่ออกแบบมาเพื่อขับเคลื่อนธุรกิจในยุคดิจิทัล</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-8">
+        <div class="glass p-10 rounded-[2.5rem]">
+            <div class="text-4xl mb-6">💻</div>
+            <h3 class="text-xl font-bold text-[#4cc3ff] mb-4">Website Development</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">เว็บบริษัทและ E-commerce ที่เน้นความเร็ว โครงสร้างรองรับ SEO เพื่อยอดขายที่ยั่งยืน</p>
+        </div>
+        <div class="glass p-10 rounded-[2.5rem]">
+            <div class="text-4xl mb-6">🔐</div>
+            <h3 class="text-xl font-bold text-[#4cc3ff] mb-4">Admin & ERP System</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">ระบบจัดการหลังบ้านเฉพาะทาง ลดขั้นตอนการทำงานที่ซ้ำซ้อนด้วย Automation</p>
+        </div>
+        <div class="glass p-10 rounded-[2.5rem]">
+            <div class="text-4xl mb-6">☁️</div>
+            <h3 class="text-xl font-bold text-[#4cc3ff] mb-4">Web Application</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">Custom Web App ที่มี Logic ซับซ้อน รองรับผู้ใช้จำนวนมากบนระบบ Cloud</p>
+        </div>
+    </div>
+</section>
+
+<section id="portfolio" class="py-32 px-6 bg-white/[0.02]">
+    <div class="max-w-7xl mx-auto">
+        <div class="flex justify-between items-end mb-16">
+            <div>
+                <h2 class="text-4xl md:text-5xl font-black mb-2">Featured Works</h2>
+                <p class="text-gray-500">ผลงานการพัฒนาระบบที่สร้างผลลัพธ์จริงให้ลูกค้า</p>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="glass overflow-hidden rounded-[2.5rem] group card-glow-blue">
+                <div class="h-52 bg-gradient-to-br from-blue-600/20 to-black p-8 flex flex-col justify-end">
+                    <span class="text-[10px] font-bold text-blue-400 bg-blue-400/10 px-3 py-1 rounded-full w-fit mb-3">CORPORATE WEB</span>
+                    <h3 class="font-bold text-xl">NeoLogistics</h3>
+                </div>
+                <div class="p-8">
+                    <p class="text-sm text-gray-400 leading-relaxed mb-6">ปรับโฉมเว็บโลจิสติกส์ พร้อมระบบคำนวณค่าส่ง เพิ่มยอด Lead ได้กว่า 150% ภายใน 3 เดือน</p>
+                    <div class="flex gap-2 text-[10px] font-mono text-gray-500">
+                        <span>#NextJS</span> <span>#Tailwind</span> <span>#SEO</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass overflow-hidden rounded-[2.5rem] group card-glow-purple">
+                <div class="h-52 bg-gradient-to-br from-purple-600/20 to-black p-8 flex flex-col justify-end">
+                    <span class="text-[10px] font-bold text-purple-400 bg-purple-400/10 px-3 py-1 rounded-full w-fit mb-3">ADMIN SYSTEM</span>
+                    <h3 class="font-bold text-xl">MedTrack Dashboard</h3>
+                </div>
+                <div class="p-8">
+                    <p class="text-sm text-gray-400 leading-relaxed mb-6">ระบบจัดการคลินิก เชื่อมต่อ Line Notify แจ้งเตือนคนไข้ และสรุปยอดขาย Real-time</p>
+                    <div class="flex gap-2 text-[10px] font-mono text-gray-500">
+                        <span>#NodeJS</span> <span>#PostgreSQL</span> <span>#LineAPI</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass overflow-hidden rounded-[2.5rem] group card-glow-emerald">
+                <div class="h-52 bg-gradient-to-br from-emerald-600/20 to-black p-8 flex flex-col justify-end">
+                    <span class="text-[10px] font-bold text-emerald-400 bg-emerald-400/10 px-3 py-1 rounded-full w-fit mb-3">WEB APP</span>
+                    <h3 class="font-bold text-xl">PropertyFlow CRM</h3>
+                </div>
+                <div class="p-8">
+                    <p class="text-sm text-gray-400 leading-relaxed mb-6">Web App จัดการ Lead อสังหาฯ ครบวงจร พร้อมระบบออกใบเสนอราคา PDF อัตโนมัติ</p>
+                    <div class="flex gap-2 text-[10px] font-mono text-gray-500">
+                        <span>#React</span> <span>#Firebase</span> <span>#CloudFunction</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-32 px-6 max-w-7xl mx-auto border-t border-white/5">
+    <div class="grid md:grid-cols-2 gap-16 items-center">
+        <div>
+            <h2 class="text-4xl font-black mb-6 leading-tight text-gradient">Professional Standards</h2>
+            <p class="text-gray-400 text-lg leading-relaxed mb-8">
+                เราทำงานด้วยความโปร่งใส ทุกโปรเจกต์มีสัญญาจ้างและงวดงานที่ชัดเจน เพื่อความมั่นใจสูงสุดของลูกค้า
+            </p>
+            <ul class="space-y-4 text-gray-400 text-sm">
+                <li class="flex items-center gap-2">✓ สัญญาจ้างมาตรฐาน ระบุขอบเขตงานชัดเจน</li>
+                <li class="flex items-center gap-2">✓ แบ่งชำระตามความสำเร็จของงาน (Milestones)</li>
+                <li class="flex items-center gap-2">✓ รับประกัน Bug Fix นานสูงสุด 1 ปี</li>
+            </ul>
+        </div>
+        <div class="glass p-4 rounded-[2.5rem] rotate-2 hover:rotate-0 transition-all duration-500">
+            <img src="agreement-mockup.png" alt="CodePixel Agreement" class="rounded-2xl w-full opacity-80 hover:opacity-100 transition shadow-2xl">
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="py-32 px-6 max-w-5xl mx-auto">
+    <div class="glass p-8 md:p-16 rounded-[3rem] border-2 border-white/10 shadow-2xl relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-32 h-32 bg-[#4cc3ff]/10 blur-3xl"></div>
+        <div class="grid md:grid-cols-2 gap-16 relative z-10">
+            <div>
+                <h2 class="text-4xl font-black mb-6">Contact Us</h2>
+                <p class="text-gray-400 mb-8">ส่งรายละเอียดงานให้เราประเมินราคาเบื้องต้นได้ทันที</p>
+                <div class="space-y-6 text-sm">
+                    <p class="flex items-center gap-4 text-gray-300">
+                        <span class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-[#4cc3ff]">📧</span> 
+                        codepixel.co.th@gmail.com
+                    </p>
+                    <p class="flex items-center gap-4 text-gray-300">
+                        <span class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-[#4cc3ff]">💬</span> 
+                        Line: @codepixel
+                    </p>
+                    <p class="flex items-center gap-4 text-gray-300">
+                        <span class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-[#4cc3ff]">📍</span> 
+                        Bangkok, Thailand
+                    </p>
+                </div>
+            </div>
+            
+            <form id="contactForm" class="flex flex-col gap-4">
+                <input id="name" required placeholder="ชื่อของคุณ / ชื่อบริษัท" class="bg-white/5 border border-white/10 p-4 rounded-2xl focus:outline-none focus:border-[#4cc3ff] transition">
+                <input id="email" type="email" required placeholder="อีเมลติดต่อ" class="bg-white/5 border border-white/10 p-4 rounded-2xl focus:outline-none focus:border-[#4cc3ff] transition">
+                <select id="projectType" class="bg-[#0b0f14] border border-white/10 p-4 rounded-2xl text-gray-400 focus:outline-none focus:border-[#4cc3ff]">
+                    <option value="General">ประเภทโปรเจกต์</option>
+                    <option value="Corporate Website">Corporate Website</option>
+                    <option value="Admin System">Admin System</option>
+                    <option value="Web App">Web Application</option>
+                </select>
+                <textarea id="message" rows="4" required placeholder="รายละเอียดงานที่คุณต้องการให้เราช่วย..." class="bg-white/5 border border-white/10 p-4 rounded-2xl focus:outline-none focus:border-[#4cc3ff] transition"></textarea>
+                <button type="submit" id="submitBtn" class="btn-gradient py-4 rounded-2xl font-black text-black uppercase tracking-widest text-sm shadow-xl">
+                    Get a Quote
+                </button>
+                <p id="status" class="text-center mt-2 text-xs font-bold"></p>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer class="py-16 text-center border-t border-white/5">
+    <div class="flex items-center justify-center gap-2 mb-4">
+        <div class="w-6 h-6 btn-gradient rounded flex items-center justify-center font-black text-black text-[8px]">CP</div>
+        <b class="text-sm tracking-widest uppercase">CodePixel Co., Ltd.</b>
+    </div>
+    <p class="text-gray-600 text-[10px] uppercase tracking-[0.5em]">Crafting Digital Excellence Since 2025</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+    // ⚠️ ขั้นตอนสำคัญ: ใส่รหัสจากบัญชี EmailJS ของคุณที่นี่
+// ค้นหาและแก้ไข 3 บรรทัดนี้ในโค้ดของคุณ
+const PUBLIC_KEY = "gqqPDm5TXIhTFQIVF"; 
+const SERVICE_ID = "service_luc8iyp"; 
+const TEMPLATE_ID = "template_kzubejn"; 
+
+(function() {
+    emailjs.init(PUBLIC_KEY); 
+})();
+
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+        e.preventDefault();
+        const btn = document.getElementById("submitBtn");
+        const status = document.getElementById("status");
+
+        btn.innerText = "SENDING...";
+        btn.disabled = true;
+
+        const params = {
+            name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            projectType: document.getElementById("projectType").value,
+            message: document.getElementById("message").value,
+            to_email: "codepixel.co.th@gmail.com"
+        };
+
+        // ตรวจสอบว่าใส่ Key หรือยัง (ถ้ายังจะแค่ Demo)
+        if(PUBLIC_KEY === "gqqPDm5TXIhTFQIVF") {
+            setTimeout(() => {
+                status.innerText = "⚠️ ระบบยังไม่เชื่อมต่อ EmailJS ";
+                status.className = "text-center mt-2 text-xs font-bold text-yellow-400";
+                btn.innerText = "GET A QUOTE";
+                btn.disabled = false;
+            }, 1500);
+            return;
+        }
+
+        emailjs.send(SERVICE_ID, TEMPLATE_ID, params)
+            .then(() => {
+                status.innerText = "✅ ส่งข้อมูลสำเร็จ! เราจะติดต่อกลับที่ " + params.email + " โดยเร็วที่สุด";
+                status.className = "text-center mt-2 text-xs font-bold text-emerald-400";
+                document.getElementById("contactForm").reset();
+                btn.innerText = "SENT SUCCESSFULLY";
+            }, (err) => {
+                status.innerText = "❌ เกิดข้อผิดพลาด กรุณาลองใหม่ หรือติดต่อเราทาง Line";
+                status.className = "text-center mt-2 text-xs font-bold text-red-400";
+                btn.innerText = "GET A QUOTE";
+                btn.disabled = false;
+            });
+    });
+</script>
+
+</body>
+</html>
